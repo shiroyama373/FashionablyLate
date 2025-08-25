@@ -1,0 +1,55 @@
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #7e5e45;
+    font-size: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #e0d8d1;
+    background-color: #fcf8f5;
+    font-size: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #c9b3a8;
+    background-color: #fffaf7;
+}
+
+.form-group button {
+    width: auto;
+    display: block;
+    margin: 20px auto 0;
+    padding: 14px 40px;
+    background-color: #b0886a;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.form-group button:hover {
+    background-color: #977056;
+}
+
+.error {
+    color: red;
+    font-weight: bold;  /* 太字 */
+    margin-top: 6px;    /* エラー文と入力欄の間に少し余白 */
+    font-size: 14px;    /* 少し小さめで見やすく */
+}

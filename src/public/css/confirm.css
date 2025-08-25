@@ -1,0 +1,155 @@
+/* =======================================
+   ページ全体
+======================================= */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+    color: #5e4c3c;
+    min-height: 100vh;
+}
+
+/* =======================================
+   ヘッダー
+======================================= */
+header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
+    color: #5e4c3c;
+    margin-right: 20px;
+}
+
+/* =======================================
+   確認画面コンテナ
+======================================= */
+.confirm-container {
+    width: 95%;             
+    max-width: 800px;       
+    margin: 120px auto 40px auto; /* ヘッダー分の余白 */
+    padding: 30px 40px;
+    background-color: transparent;  /* 親ボックスの白を消す */
+    border-radius: 0;               /* 角丸なし */
+    box-shadow: none;               /* 影なし */
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* タイトル */
+.confirm-container h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+}
+
+/* 確認テーブル */
+.confirm-container table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.confirm-container th {
+    padding: 20px 24px;
+    background-color: #b0886a;
+    color: #ffffff;
+    width: 30%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.confirm-container td {
+    padding: 20px 24px;
+    border: 1px solid #ddd;
+    width: 70%;
+    vertical-align: top;
+    background-color: transparent;
+}
+
+/* =======================================
+   ボタン・リンク
+======================================= */
+.form-actions {
+    display: flex;
+    justify-content: center;  /* 横並び中央 */
+    gap: 20px;                /* ボタンとリンクの間隔 */
+    margin-top: 30px;
+}
+
+/* 送信ボタン */
+.confirm-container .btn-submit {
+    background-color: #b0886a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;       /* 小さめ */
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.confirm-container .btn-submit:hover {
+    background-color: #977056;
+}
+
+/* 修正リンク */
+.confirm-container .btn-edit {
+    color: #b0886a;
+    text-decoration: underline;  /* 下線 */
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.confirm-container .btn-edit:hover {
+    color: #977056;
+}
+
+/* =======================================
+   レスポンシブ対応
+======================================= */
+@media (max-width: 768px) {
+    .confirm-container {
+        width: 95%;
+        margin: 100px 20px 20px 20px;
+        padding: 20px;
+    }
+
+    .confirm-container th,
+    .confirm-container td {
+        display: block;
+        width: 100%;
+    }
+
+    .confirm-container td {
+        margin-bottom: 12px;
+    }
+
+    /* 横並びを維持 */
+    .form-actions {
+        flex-direction: row;       /* 横並び固定 */
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .form-actions .btn-submit,
+    .form-actions .btn-edit {
+        width: auto;
+    }
+}

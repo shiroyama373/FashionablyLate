@@ -1,0 +1,59 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+    color: #5e4c3c;
+}
+
+/* サンクスページ全体を画面中央に配置 */
+.thanks-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直方向中央 */
+    align-items: center;     /* 水平方向中央 */
+    height: 100vh;           /* 画面全体 */
+    text-align: center;
+    position: relative;
+}
+
+.thanks-bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:  200px; /* 文字サイズを大きく */
+    font-family:  Georgia, serif; /* 好きなフォントに変更可能 */
+    color: rgba(176, 136, 106, 0.1); /* 薄い茶色で透かし */
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+.thanks-message {
+     position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* 見出しとボタンの間隔 */
+}
+
+
+.thanks-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #b0886a;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.thanks-button:hover {
+    background-color: #977056;
+}

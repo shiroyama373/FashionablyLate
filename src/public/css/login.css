@@ -1,0 +1,22 @@
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #e0d8d1;
+    background-color: #fcf8f5;
+    font-size: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #c9b3a8;
+    background-color: #fffaf7;
+}
+
+.error {
+    color: red;
+    font-weight: bold;  /* 太字にしたいなら */
+    margin-top: 4px;    /* エラーと入力欄の間に少し余白を */
+}
