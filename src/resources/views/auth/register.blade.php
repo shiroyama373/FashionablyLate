@@ -17,7 +17,8 @@
     <h1>Register</h1>
 </div>
 
-<div class="register-container">    <form method="POST" action="{{ route('register') }}" novalidate>
+<div class="register-container">    
+    <form method="POST" action="{{ route('register') }}" novalidate>
     @csrf 
 
         <div class="form-group">
